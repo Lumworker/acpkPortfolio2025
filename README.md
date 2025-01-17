@@ -13,12 +13,6 @@ All project images live under `public/images` and are automatically attached to 
 # ✨ Development
 
 ```bash
-git clone git@github.com:yourusername/Developer-Portfolio.git
-cd Developer-Portfolio/
-
-# GITHUB_TOKEN is required for some parts
-# See https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
-
 npm i
 npm run dev
 ```
