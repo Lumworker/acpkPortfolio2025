@@ -2,104 +2,127 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Projects: React.FC<{}> = () => {
+const Experience: React.FC<{}> = () => {
   return (
-    <section id="projects">
+    <section id="experience">
       <h2 className="text-white font-semibold text-center text-6xl pt-[35px]">
-        PROJECTS
+        WORK EXPERIENCE
       </h2>
-      <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">
-        EXPLORE NOW
+      <p className="tracking-[0.5em] text-center text-transparent font-light pb-5 bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500 text-1xl ">
+        EXPLORE MY JOURNEY
       </p>
-      <div className=" container mx-auto 2xl  ">
-        <div className="flex-col flex md:flex-row  mt-7">
+      <div className="container mx-auto 2xl">
+        <div className="flex-col flex md:flex-row mt-7">
           <Link
-            href="https://web.hr/"
+            href="https://q-chang.com"
             rel="noopener noreferrer"
             target="_blank"
             className="z-[1]"
           >
             <div className="flex-row flex mb-5">
               <Image
-                src="/FirstProject.png"
-                height={150}
+                src="/q-chang-logo-color.svg"
+                height={100}
                 width={150}
-                alt="Aong Chonprakun - Web Developer"
+                objectFit="contain"
+                alt="Q Chang - Programmer"
               />
-              <div className="p-3">
+              <div className="p-3 max-w-[280px]">
                 <p className="text-white font-semibold text-xl">Q Chang</p>
                 <p className="text-gray-500 text-[10px]">
-                  Designed a modern UI website comprising more than 50 screens,
-                  along with the integration of a blog using Next.js.
+                  Programmer: Developed a web platform connecting customers with home & living service providers.
                 </p>
               </div>
             </div>
           </Link>
           <Link
-            href="https://hireside.com/"
+            href="https://www.riverparkconsultant.com"
             rel="noopener noreferrer"
             target="_blank"
             className="z-[1]"
           >
             <div className="flex-row flex mb-5">
               <Image
-                src="/SecondProject.png"
-                height={150}
+                src="/rivarpark-logo.png"
+                height={100}
                 width={150}
-                alt="Aong Chonprakun - Web Developer"
+                objectFit="contain"
+                alt="Riverpark Consultant - Front-End Developer"
               />
-              <div className="p-3">
-                <p className="text-white font-semibold text-xl">HireSide</p>
+              <div className="p-3 max-w-[280px]">
+                <p className="text-white font-semibold text-xl">Riverpark Consultant</p>
                 <p className="text-gray-500 text-[10px]">
-                  Developed a web application on Next.js that allows users to
-                  apply for jobs, create job posts, and manage their company
-                  profiles.
+                  Front-End Developer: Built and maintained web applications, focusing on UI/UX improvements.
                 </p>
               </div>
             </div>
           </Link>
         </div>
-        <div className="flex-col flex md:flex-row ">
+        <div className="flex-col flex md:flex-row mt-7">
           <Link
-            href="https://www.vergesystems.com/"
+            href="https://www.patkol.com"
             rel="noopener noreferrer"
             target="_blank"
             className="z-[1]"
           >
             <div className="flex-row flex mb-5">
               <Image
-                src="/ThirdProject.png"
-                height={150}
+                src="/patkol-company-logo.png"
+                height={100}
                 width={150}
-                alt="Aong Chonprakun - Web Developer"
+                objectFit="contain"
+                alt="Patkol - Full-Stack Developer"
               />
-              <div className=" p-3 ">
-                <p className="text-white font-semibold text-xl">
-                  Verge Systems
-                </p>
+              <div className="p-3 max-w-[280px]">
+                <p className="text-white font-semibold text-xl">Patkol Co., Ltd.</p>
                 <p className="text-gray-500 text-[10px]">
-                  Developed the Verge Systems website using React.js.
+                  Full-Stack Developer: Developed HR systems and Line Bot for factory machine alerts.
                 </p>
               </div>
             </div>
           </Link>
           <Link
-            href="http://44.201.47.75/"
+            href="https://www.tot.co.th"
             rel="noopener noreferrer"
             target="_blank"
             className="z-[1]"
           >
             <div className="flex-row flex mb-5">
               <Image
-                src="/FourProject.png"
-                height={150}
+                src="/tot_logo.png"
+                height={100}
                 width={150}
-                alt="Aong Chonprakun - Web Developer"
+                objectFit="contain"
+                alt="TOT - Internship"
               />
-              <div className="p-3 ">
-                <p className="text-white font-semibold text-xl">Payoasis</p>
+              <div className="p-3 max-w-[280px]">
+                <p className="text-white font-semibold text-xl">TOT Co., Ltd.</p>
                 <p className="text-gray-500 text-[10px]">
-                  Designed the modern UI for a banking website utilizing Gatsby.
+                  Internship: Developed web applications for customer profiles in the 3G system.
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="flex-col flex md:flex-row mt-7">
+          <Link
+            href="https://ducklab.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="z-[1]"
+          >
+            <div className="flex-row flex mb-5">
+              <Image
+                src="/duck_lab_logo.jpg"
+                height={100}
+                width={150}
+                objectFit="contain"
+                alt="Duck Lab - Full-Stack Developer"
+              />
+              <div className="p-3 max-w-[280px]">
+                <p className="text-white font-semibold text-xl">Duck Lab</p>
+                <p className="text-gray-500 text-[10px]">
+                  Full-Stack Developer: Developed applications for the Royal Thai Air Force's HR system.
                 </p>
               </div>
             </div>
@@ -110,4 +133,4 @@ const Projects: React.FC<{}> = () => {
   );
 };
 
-export default Projects;
+export default Experience;

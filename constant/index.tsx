@@ -1,6 +1,6 @@
 export const Social_Icons = [
   {
-    link: "https://github.com/ibrahimmemonn",
+    link: "https://github.com/Lumworker",
     image: "/Github.svg",
     alt: "Aong Chonprakun - Social Media",
   },
