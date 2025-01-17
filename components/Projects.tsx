@@ -43,7 +43,7 @@ const Experience: React.FC<{}> = () => {
           >
             <div className="flex-row flex mb-5">
               <Image
-                src="/rivarpark-logo.png"
+                src="/rivarpark-logo.webp"
                 height={100}
                 width={150}
                 objectFit="contain"
@@ -67,7 +67,7 @@ const Experience: React.FC<{}> = () => {
           >
             <div className="flex-row flex mb-5">
               <Image
-                src="/patkol-company-logo.png"
+                src="/patkol-company-logo.webp"
                 height={100}
                 width={150}
                 objectFit="contain"
@@ -89,7 +89,7 @@ const Experience: React.FC<{}> = () => {
           >
             <div className="flex-row flex mb-5">
               <Image
-                src="/tot_logo.png"
+                src="/tot_logo.webp"
                 height={100}
                 width={150}
                 objectFit="contain"
@@ -113,7 +113,7 @@ const Experience: React.FC<{}> = () => {
           >
             <div className="flex-row flex mb-5">
               <Image
-                src="/duck_lab_logo.jpg"
+                src="/duck_lab_logo.webp"
                 height={100}
                 width={150}
                 objectFit="contain"
