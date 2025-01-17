@@ -1,9 +1,3 @@
-# Personal Developer Portfolio 🚀
-
-[![Site preview](/public/portfolio-thumbnail.png)](https://ibiimemon.com/)
-
-Welcome to my developer portfolio! This project showcases my skills, projects, and experience as a developer. Built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com), it not only provides a visually appealing representation of my work but also ensures optimal performance. View the [live site](https://your-site-url.com/).
-
 # Features 🎉
 
 The entire [portfolio](https://your-site-url.com/) is a React-based single-page app built with Next.js in TypeScript, using only statically generated pages.
