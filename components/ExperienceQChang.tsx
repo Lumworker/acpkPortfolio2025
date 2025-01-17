@@ -24,7 +24,7 @@ const ExperienceQChang: React.FC<{}> = () => {
             </p>
           </div>
           <p className="text-gray-300 md:pt-0 pt-3">
-            May 2022 - Present, United States
+            May 2022 - Present, Thailand
           </p>
         </div>
 
