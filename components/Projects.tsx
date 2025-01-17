@@ -24,10 +24,10 @@ const Projects: React.FC<{}> = () => {
                 src="/FirstProject.png"
                 height={150}
                 width={150}
-                alt="Ibrahim Memon - UX Design Project"
+                alt="Aong Chonprakun - Web Developer"
               />
               <div className="p-3">
-                <p className="text-white font-semibold text-xl">WebHR</p>
+                <p className="text-white font-semibold text-xl">Q Chang</p>
                 <p className="text-gray-500 text-[10px]">
                   Designed a modern UI website comprising more than 50 screens,
                   along with the integration of a blog using Next.js.
@@ -46,7 +46,7 @@ const Projects: React.FC<{}> = () => {
                 src="/SecondProject.png"
                 height={150}
                 width={150}
-                alt="Ibrahim Memon - UX Design Project"
+                alt="Aong Chonprakun - Web Developer"
               />
               <div className="p-3">
                 <p className="text-white font-semibold text-xl">HireSide</p>
@@ -71,7 +71,7 @@ const Projects: React.FC<{}> = () => {
                 src="/ThirdProject.png"
                 height={150}
                 width={150}
-                alt="Ibrahim Memon - UX Design Project"
+                alt="Aong Chonprakun - Web Developer"
               />
               <div className=" p-3 ">
                 <p className="text-white font-semibold text-xl">
@@ -94,7 +94,7 @@ const Projects: React.FC<{}> = () => {
                 src="/FourProject.png"
                 height={150}
                 width={150}
-                alt="Ibrahim Memon - UX Design Project"
+                alt="Aong Chonprakun - Web Developer"
               />
               <div className="p-3 ">
                 <p className="text-white font-semibold text-xl">Payoasis</p>
