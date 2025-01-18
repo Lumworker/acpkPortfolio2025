@@ -12,7 +12,7 @@ const Experience: React.FC<{}> = () => {
         EXPLORE MY JOURNEY
       </p>
       <div className="container mx-auto 2xl">
-        <div className="flex-col flex md:flex-row mt-7">
+        <div className="flex-col flex md:flex-row">
           <Link
             href="https://q-chang.com"
             rel="noopener noreferrer"
@@ -44,7 +44,7 @@ const Experience: React.FC<{}> = () => {
             <div className="flex-row flex mb-5">
               <Image
                 src="/rivarpark-logo.webp"
-                height={100}
+                height={97}
                 width={150}
                 objectFit="contain"
                 alt="Riverpark Consultant - Front-End Developer"
@@ -58,7 +58,7 @@ const Experience: React.FC<{}> = () => {
             </div>
           </Link>
         </div>
-        <div className="flex-col flex md:flex-row mt-7">
+        <div className="flex-col flex md:flex-row">
           <Link
             href="https://www.patkol.com"
             rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const Experience: React.FC<{}> = () => {
             <div className="flex-row flex mb-5">
               <Image
                 src="/patkol-company-logo.webp"
-                height={100}
+                height={97}
                 width={150}
                 objectFit="contain"
                 alt="Patkol - Full-Stack Developer"
@@ -90,7 +90,7 @@ const Experience: React.FC<{}> = () => {
             <div className="flex-row flex mb-5">
               <Image
                 src="/tot_logo.webp"
-                height={100}
+                height={97}
                 width={150}
                 objectFit="contain"
                 alt="TOT - Internship"
@@ -104,7 +104,7 @@ const Experience: React.FC<{}> = () => {
             </div>
           </Link>
         </div>
-        <div className="flex-col flex md:flex-row mt-7">
+        <div className="flex-col flex md:flex-row">
           <Link
             href="https://ducklab.com"
             rel="noopener noreferrer"

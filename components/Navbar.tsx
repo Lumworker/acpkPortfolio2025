@@ -9,7 +9,7 @@ const Navbar: React.FC<{}> = () => {
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <a
           title="Aong logo"
-          href="/"
+          href="https://www.linkedin.com/in/chonprakun-panusetgul-7a1170250/"
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image

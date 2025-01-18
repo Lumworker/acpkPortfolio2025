@@ -11,7 +11,7 @@ const Experience: React.FC<{}> = () => {
         EXPLORE NOW
       </p>
       {/* // Q-chang Experience */}
-      <div className=" container mx-auto 2xl ">
+      <div className=" container mx-auto 2xl">
         <div className="md:flex md:flex-row md:justify-between pt-5">
           <div className="flex items-center gap-3">
             <Image
