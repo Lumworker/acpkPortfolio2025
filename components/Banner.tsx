@@ -66,7 +66,7 @@ const Banner: React.FC<{}> = () => {
               {/* Back Side */}
               <Image
                 priority
-                src="/me3.webp"
+                src="/Me3.webp"
                 height={250}
                 width={250}
                 alt="Back Side"
