@@ -22,7 +22,7 @@ const Experience: React.FC<{}> = () => {
             />
             <p className="text-gray-300 ">
               <span className="font-semibold">Q Chang /</span> Front End
-              Developer
+              Developer (Contract)
             </p>
           </div>
           <p className="text-gray-300 md:pt-0 pt-3">
@@ -69,7 +69,7 @@ const Experience: React.FC<{}> = () => {
               alt={"Aong Chonprakun - UX Experience"}
             />
             <p className="text-gray-300 ">
-              <span className="font-semibold">RiverParkConsultant/</span>
+              <span className="font-semibold">RiverParkConsultant / </span>
               Software Developer
             </p>
           </div>
@@ -116,7 +116,7 @@ const Experience: React.FC<{}> = () => {
               alt={"Aong Chonprakun - Software Developer"}
             />
             <p className="text-gray-300 ">
-              <span className="font-semibold">Patkol Co., Ltd./</span>
+              <span className="font-semibold">Patkol Co., Ltd. / </span>
               Full-Stack Developer
             </p>
           </div>
