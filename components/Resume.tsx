@@ -4,10 +4,6 @@ import React from "react";
 import Link from "next/link";
 
 const Resume: React.FC<{}> = () => {
-  const onButtonClick = () => {
-    // window.open("/resume.pdf", "_blank"); // Correct path for public files
-    console.log("Downloading Resume");
-  };
 
   return (
     <section id="Resume" className="text-center">
