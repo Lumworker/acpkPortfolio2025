@@ -26,6 +26,7 @@ const Experience: React.FC<{}> = () => {
                 width={150}
                 objectFit="contain"
                 alt="Q Chang - Programmer"
+                className="min-w-[150px]"
               />
               <div className="p-3 max-w-[280px]">
                 <p className="text-white font-semibold text-xl">Q Chang</p>
