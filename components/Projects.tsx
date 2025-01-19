@@ -37,7 +37,7 @@ const Experience: React.FC<{}> = () => {
             </div>
           </Link>
           <Link
-            href="https://www.riverparkconsultant.com"
+            href="https://www.facebook.com/RiverParkConsultant/?locale=th_TH"
             rel="noopener noreferrer"
             target="_blank"
             className="z-[1]"
@@ -61,7 +61,7 @@ const Experience: React.FC<{}> = () => {
         </div>
         <div className="flex-col flex md:flex-row">
           <Link
-            href="https://www.patkol.com"
+            href="https://www.patkol.com/"
             rel="noopener noreferrer"
             target="_blank"
             className="z-[1]"
@@ -107,7 +107,7 @@ const Experience: React.FC<{}> = () => {
         </div>
         <div className="flex-col flex md:flex-row">
           <Link
-            href="https://ducklab.com"
+            href="https://hris.rtaf.mi.th/"
             rel="noopener noreferrer"
             target="_blank"
             className="z-[1]"
