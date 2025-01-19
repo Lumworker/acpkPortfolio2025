@@ -26,7 +26,7 @@ const Experience: React.FC<{}> = () => {
             </p>
           </div>
           <p className="text-gray-300 md:pt-0 pt-3">
-            May 2022 - Present, Thailand
+            May 2023 - Present, Thailand
           </p>
         </div>
 
@@ -74,7 +74,7 @@ const Experience: React.FC<{}> = () => {
             </p>
           </div>
           <p className="text-gray-300 md:pt-0 pt-3">
-            Sep 2019 - May 2022, Thailand
+            Sep 2021 - May 2023, Thailand
           </p>
         </div>
 
@@ -121,7 +121,7 @@ const Experience: React.FC<{}> = () => {
             </p>
           </div>
           <p className="text-gray-300 md:pt-0 pt-3">
-            Jan 2017 - Aug 2019, Thailand
+            Jan 2019 - Aug 2021, Thailand
           </p>
         </div>
 
