@@ -9,6 +9,7 @@ const qChangMockups = [
   { id: 2, name: "Link Tracking (Figma Design)", link: "https://www.figma.com/design/9p4eV70uCKuRQmdEbIc23m/Merge-Order?node-id=9-4462&t=OmaR8zTrdjznTeX5-1" },
   { id: 3, name: "Link Tracking (Demo)", link: "https://sit-test.q-chang.io/tracking/order/690458ff0ce3694d9c65a6fb" },
   { id: 4, name: "Q-chang Line Bot (Node.js)", link: "https://line.me/R/ti/p/%40jqc3590i" },
+  { id: 5, name: "Q-chang Line Bot (Figma Demo)", link: "https://www.figma.com/proto/fZDubFDi7qIESwQts8WJIp?node-id=2369%3A83791" },
 ];
 
 // Mockup data สำหรับรายการ Portfolio ย่อย (RiverParkConsultant)
