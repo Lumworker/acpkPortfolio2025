@@ -1,7 +1,7 @@
-'use client' // <--- ต้องมีบรรทัดนี้เป็นบรรทัดแรกสุด!
+'use client' 
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 
 // Mockup data สำหรับรายการ Portfolio ย่อย (Q Chang)
 const qChangMockups = [
@@ -17,21 +17,64 @@ const riverParkMockups = [
   { id: 2, name: "PDPA Tokyo Marine (Figma design 2)", link: "https://www.figma.com/design/d94Sd7hEIzkCJeuynp7M7e/Document-11---12---Memo?node-id=0-1&p=f&t=kYf21bP2fyh4S33r-0" },
 ];
 
+// รหัสผ่านสำหรับลิงก์ Figma
+const FIGMA_PASSWORD = "220939";
 
 const Experience: React.FC<{}> = () => {
-  // State 1: ควบคุมการแสดง/ซ่อน รายการ Portfolio สำหรับ Q Chang
   const [showQChangPortfolio, setShowQChangPortfolio] = useState(false);
-  
-  // State 2: ควบคุมการแสดง/ซ่อน รายการ Portfolio สำหรับ RiverPark
   const [showRiverParkPortfolio, setShowRiverParkPortfolio] = useState(false);
+
+  // ฟังก์ชันจัดการการคลิกลิงก์ (มีการตรวจสอบรหัสผ่าน)
+  const handleLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
+    // 1. ตรวจสอบว่าเป็นลิงก์ Figma หรือไม่
+    const isFigmaLink = link.includes('figma.com/design');
+
+    if (isFigmaLink) {
+      // ป้องกันการเปิดลิงก์ทันที
+      e.preventDefault(); 
+      
+      // 2. ใช้ prompt() เพื่อให้ผู้ใช้กรอกรหัสผ่าน
+      const enteredPassword = prompt("🔐 กรุณากรอกรหัสผ่านเพื่อเข้าชมงาน Figma Design:");
+
+      // 3. ตรวจสอบรหัสผ่าน
+      if (enteredPassword === FIGMA_PASSWORD) {
+        // ถ้าถูกต้อง: แจ้งเตือนสำเร็จและเปิดลิงก์
+        window.open(link, '_blank');
+      } else if (enteredPassword !== null) {
+        // ถ้าไม่ถูกต้อง (และผู้ใช้ไม่ได้กด Cancel)
+        alert("❌ รหัสผ่านไม่ถูกต้อง กรุณาลองอีกครั้ง");
+      }
+      // ถ้าผู้ใช้กด Cancel (enteredPassword จะเป็น null) จะไม่ทำอะไร
+    }
+    // สำหรับลิงก์ที่ไม่ใช่ Figma, จะปล่อยให้เหตุการณ์ทำงานต่อไปตามปกติ
+  }, []);
+
+
+  const renderPortfolioList = (mockups: typeof qChangMockups) => (
+    <ul className="list-disc list-inside">
+      {mockups.map((mockup) => (
+        <li key={mockup.id} className="text-gray-300 ml-2 mb-1">
+          <a 
+            href={mockup.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-purple-400 hover:text-purple-300 transition duration-200 underline"
+            onClick={(e) => handleLinkClick(e, mockup.link)} // ใช้ฟังก์ชันตรวจสอบรหัสผ่าน
+          >
+            {mockup.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
 
   return (
     <section id="experience">
-      <h2 className="text-white font-semibold text-center text-6xl   pt-[35px]">
+      <h2 className="text-white font-semibold text-center text-6xl pt-[35px]">
         EXPERIENCE
       </h2>
       <p className=" tracking-[0.5em] text-center text-transparent font-light pb-5  bg-clip-text bg-gradient-to-r from-purple-700 to-orange-500  text-1xl ">
-        EXPLORE NOW {/* ลบตัวแปรทดสอบออก */}
+        EXPLORE NOW
       </p>
       
       {/* // Q-chang Experience */}
@@ -85,20 +128,7 @@ const Experience: React.FC<{}> = () => {
         {showQChangPortfolio && (
           <div className="mt-4 p-4 border border-purple-700/50 rounded-lg bg-[#1a1a1a] transition duration-300 relative z-10 cursor-default">
             <h4 className="text-white font-semibold mb-3">Q Chang Case Studies:</h4>
-            <ul className="list-disc list-inside">
-              {qChangMockups.map((mockup) => (
-                <li key={mockup.id} className="text-gray-300 ml-2 mb-1">
-                  <a 
-                    href={mockup.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-400 hover:text-purple-300 transition duration-200 underline"
-                  >
-                    {mockup.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            {renderPortfolioList(qChangMockups)}
           </div>
         )}
       </div>
@@ -152,20 +182,7 @@ const Experience: React.FC<{}> = () => {
         {showRiverParkPortfolio && (
           <div className="mt-4 p-4 border border-purple-700/50 rounded-lg bg-[#1a1a1a] transition duration-300 relative z-10 cursor-default">
             <h4 className="text-white font-semibold mb-3">RiverPark Case Studies:</h4>
-            <ul className="list-disc list-inside">
-              {riverParkMockups.map((mockup) => (
-                <li key={mockup.id} className="text-gray-300 ml-2 mb-1">
-                  <a 
-                    href={mockup.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-400 hover:text-purple-300 transition duration-200 underline"
-                  >
-                    {mockup.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            {renderPortfolioList(riverParkMockups)}
           </div>
         )}
       </div>
