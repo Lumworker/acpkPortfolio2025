@@ -101,7 +101,7 @@ const Banner: React.FC<{}> = () => {
         </p>
         <div className="text-md flex justify-center">
           <button
-            onClick={() => window.open("mailto:Lumworker@hotmail.com")}
+            onClick={() => window.open("mailto:chonprakun.work@gmail.com")}
             className="z-[1] hover:bg-white rounded-3xl text-white font-semibold hover:text-black py-3 px-10 border-[0.1px] border-white hover:border-transparent"
           >
             Contact Me
