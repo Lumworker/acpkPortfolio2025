@@ -15,8 +15,8 @@ const About: React.FC<{}> = () => {
         <p className="text-gray-300 text-center">
           I am a full-stack developer with expertise in web applications, system
           integrations, and IoT solutions. Currently working at SCG Q-CHANG, I
-          focus on developing and optimizing their home & living digital
-          platform. Previously, I contributed to PDPA Tokio Marine Safety
+          focus on developing and optimizing their home & living service providers.
+          Previously, I contributed to PDPA Tokio Marine Safety
           Insurance web applications at Riverpark Consultant and led IoT-related
           projects at Patkol.Co.ltd, including IoT Smart Automation and Line Bot
           integrations for factory monitoring and HR management.
