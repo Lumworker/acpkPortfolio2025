@@ -13,10 +13,10 @@ const qChangMockups = [
 ];
 
 // Mockup data สำหรับรายการ Portfolio ย่อย (RiverParkConsultant)
-const riverParkMockups = [
-  { id: 1, name: "PDPA Tokyo Marine (Figma design)", link: "https://www.figma.com/design/fbhIpWwP6AxGDJGd8HjuqT/Doc.8?node-id=6-2&p=f&t=yVbfSjdP516qV9y2-0" },
-  { id: 2, name: "PDPA Tokyo Marine (Figma design 2)", link: "https://www.figma.com/design/d94Sd7hEIzkCJeuynp7M7e/Document-11---12---Memo?node-id=0-1&p=f&t=kYf21bP2fyh4S33r-0" },
-];
+// const riverParkMockups = [
+//   { id: 1, name: "PDPA Tokyo Marine (Figma design)", link: "https://www.figma.com/design/fbhIpWwP6AxGDJGd8HjuqT/Doc.8?node-id=6-2&p=f&t=yVbfSjdP516qV9y2-0" },
+//   { id: 2, name: "PDPA Tokyo Marine (Figma design 2)", link: "https://www.figma.com/design/d94Sd7hEIzkCJeuynp7M7e/Document-11---12---Memo?node-id=0-1&p=f&t=kYf21bP2fyh4S33r-0" },
+// ];
 
 // รหัสผ่านสำหรับลิงก์ Figma
 const FIGMA_PASSWORD = "220939";
